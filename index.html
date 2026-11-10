@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O Segredo da Felicidade | Cafés, pães e momentos especiais</title>
+<meta name="description" content="Conheça O Segredo da Felicidade: cafés especiais, pães de fermentação natural e bolos artesanais em São Caetano do Sul.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="intro" id="intro" aria-hidden="true"><img src="logo.jpg" alt=""></div>
+
+<header class="nav" id="nav">
+  <a href="#topo" class="brand"><img src="logo.jpg" alt=""><span data-cfg="name"></span></a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="menu"><a href="#sobre">Sobre</a><a href="#cardapio">Cardápio</a><a href="#galeria">Galeria</a><a href="#diferenciais">Diferenciais</a><a href="#contato">Contato</a></nav>
+</header>
+
+<main id="topo">
+<section class="hero">
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <div class="hero-txt">
+    <p class="kicker">O SEGREDO DA FELICIDADE · COFFEE</p>
+    <h1><span>Uma pausa</span><span>que vale</span><span><em>cada gole.</em></span></h1>
+    <p class="lead">Cafés especiais, pães de fermentação natural e bolos artesanais. Um convite para desacelerar, aproveitar o momento e descobrir novos sabores.</p>
+    <div class="btns"><a class="btn fill" href="#cardapio">Ver o cardápio</a><a class="btn out" data-wa="Olá! Vim pelo site e gostaria de mais informações.">Falar no WhatsApp</a></div>
+  </div>
+  <div class="hero-art">
+    <div class="ph big" data-depth="0.08"><img src="latte-topo.jpg" alt="Café com latte art em xícara branca"></div>
+    <div class="ph mid float" data-depth="0.16"><img src="bomba.jpg" alt="Bomba recheada com creme e caramelo"></div>
+    <div class="ph sm float2" data-depth="0.24"><img src="cookie.jpg" alt="Cookie red velvet com recheio cremoso"></div>
+  </div>
+  <div class="scroll-hint">role</div>
+</section>
+
+<section class="sec about" id="sobre">
+  <div class="about-img reveal img-reveal"><img src="latte-servindo.jpg" alt="Barista servindo leite vaporizado em uma xícara" loading="lazy"></div>
+  <div class="reveal">
+    <h2 data-cfg="aboutTitle"></h2>
+    <p data-cfg="aboutText"></p>
+    <a class="btn out dark" href="#cardapio">Conheça os sabores</a>
+  </div>
+</section>
+
+<section class="sec menu" id="cardapio">
+  <h2 class="center reveal">Para provar hoje</h2>
+  <p class="sub center reveal">Algumas das nossas especialidades. Pergunte pelo cardápio completo.</p>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section class="sec gallery" id="galeria">
+  <h2 class="reveal">Um pouco dos nossos sabores</h2>
+  <p class="sub reveal">Cada visita é uma oportunidade de descobrir um novo café, um pão artesanal ou aquele doce que combina com a sua pausa.</p>
+  <div class="gal">
+    <figure class="reveal img-reveal g-a"><img src="torrada.jpg" alt="Torrada com creme e cogumelos" loading="lazy"></figure>
+    <figure class="reveal img-reveal g-b"><img src="bolo.jpg" alt="Fatia de bolo de chocolate com cobertura" loading="lazy"></figure>
+    <figure class="reveal img-reveal g-c"><img src="cookie.jpg" alt="Cookie red velvet partido" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="sec feats" id="diferenciais">
+  <h2 class="center reveal">Pequenos detalhes, grandes momentos</h2>
+  <div class="feat-grid" id="feats"></div>
+</section>
+
+<section class="cta">
+  <div class="cta-bg" data-parallax="0.15"><img src="bolo.jpg" alt="" loading="lazy"></div>
+  <div class="reveal"><p class="kicker">SUA PAUSA TEM LUGAR CERTO</p><h2>Tem sempre um bom motivo para passar por aqui.</h2><a class="btn fill" data-wa="Olá! Conheci o site e gostaria de saber mais sobre os produtos e o cardápio.">Fale com a gente</a></div>
+</section>
+
+<section class="sec contact" id="contato">
+  <div class="reveal">
+    <p class="kicker">VAMOS TOMAR UM CAFÉ?</p><h2>Venha conhecer a nossa casa.</h2><p class="contact-intro">Estamos em São Caetano do Sul. Consulte o horário de funcionamento e fale com a equipe antes da sua visita.</p>
+    <ul>
+      <li><b>Endereço</b><span data-cfg="address"></span></li>
+      <li><b>Horários</b><span data-cfg="hours"></span></li>
+      <li><b>WhatsApp</b><span data-cfg="phoneLabel"></span></li>
+      <li><b>Instagram</b><a id="igLink" target="_blank" rel="noopener"></a></li>
+    </ul>
+    <div class="btns"><a class="btn fill" data-wa="Olá! Vim pelo site.">WhatsApp</a><a class="btn out" id="mapBtn" target="_blank" rel="noopener">Como chegar</a></div>
+  </div>
+  <div class="map reveal" id="map"></div>
+</section>
+</main>
+
+<footer><span class="brand-f" data-cfg="name"></span><span>© <span id="yr"></span> Todos os direitos reservados.</span></footer>
+<a class="wa-float" data-wa="Olá! Vim pelo site e gostaria de falar com a equipe." aria-label="Falar com O Segredo da Felicidade pelo WhatsApp">WhatsApp</a>
+<script src="script.js"></script>
+</body>
+</html>
